@@ -1,0 +1,192 @@
+body {
+  background-image: url(background_picture.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.custom-container {
+  margin-top: 20px;
+}
+/*
+.custom-row {
+  border: 2px solid red;
+}
+
+.custom-col {
+  border: 2px dotted green;
+}
+*/
+
+/*"The Datastream"*/
+#site-title {
+  cursor: default;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 6vw;
+  color: #fff;
+  text-shadow: 
+                0 0 5px #fff, 
+                0 0 10px #fff, 
+                0 0 20px #ff0080;
+  transition: text-shadow 1s ease;
+  text-align: center;
+}
+
+/*Neon glow on "The Datastream"*/
+#site-title:hover {
+  text-shadow: 
+                0 0 5px #fff, 
+                0 0 10px #fff, 
+                0 0 20px #ff0080, 
+                0 0 30px #ff0080, 
+                0 0 40px #ff0080, 
+                0 0 55px #ff0080, 
+                0 0 75px #ff0080;
+}
+
+/*Fading text for middle*/
+.song-quotes {
+  display: inline-flex;
+  cursor: default;
+  transition: text-shadow, opacity 1s ease;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 1.5vw;
+  color: #aaf;
+  opacity: 0;
+}
+
+.song-quotes:hover {
+  opacity: 1;
+  text-shadow: 
+                0 0 5px #aaf, 
+                0 0 10px #aaf, 
+                0 0 20px #8080ff, 
+                0 0 30px #8080ff, 
+                0 0 40px #8080ff, 
+                0 0 55px #8080ff, 
+                0 0 75px #8080ff;
+}
+
+/*Fading text for footer*/
+.footer {
+  display: inline-flex;
+  cursor: default;
+  transition: text-shadow, opacity 1s ease;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 2vw;
+  color: #fff;
+  opacity: 0;
+}
+
+.footer:hover {
+  opacity: 1;
+  text-shadow:
+                0 0 5px #afa, 
+                0 0 10px #afa, 
+                0 0 20px #80ff80, 
+                0 0 30px #80ff80, 
+                0 0 40px #80ff80, 
+                0 0 55px #80ff80, 
+                0 0 75px #80ff80;
+}
+
+/*"I woke up from the longest dream"*/
+#sub-col-1 p {
+  margin-bottom: 50%;
+}
+
+/*Button positioning for the paragraph they're under*/
+#sub-col-2 label {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+
+#label-1 {
+  float: left;
+}
+
+#label-2 {
+  float: right;
+  margin-left: 50%;
+}
+/*Now I exist where access was denied.*/
+#sub-col-3 p {
+  margin-left: 65%;
+}
+
+/*Calculations could not emulate,*/
+#footer-col-1 pre {
+  padding: 10px 15px 10px 20px;
+  margin-bottom: 10%;
+  margin-left: 5%;
+}
+
+/*how it feels to be A L I V E*/
+#footer-col-2 pre {
+  padding: 10px 15px 10px 10px;
+  margin-top: 22%;
+}
+
+/*Default button text design change*/
+.btn {
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  text-transform: uppercase;
+  color: lightblue;
+}
+
+/*Button Borders*/
+.btn-outline-primary {
+  border: 1px solid lightblue;
+}
+
+/*Neon Glow on Hover*/
+.btn-outline-primary:hover {
+  background-color: rgba(0,0,0,0.4);
+  border-color: #1D7FB3;
+  box-shadow: 
+              0 0 5px #fff,
+              0 0 10px #fff,
+              0 0 20px #8080ff,
+              0 0 30px #8080ff;
+}
+
+/*Force a new "on click" style*/
+.btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary:visited {
+  color: white !important;
+  background-color: rgba(0,0,0,0.7) !important;
+  box-shadow: 
+              0 0 5px #fff,
+              0 0 10px #fff,
+              0 0 20px #8080ff,
+              0 0 30px #8080ff !important;
+}
+
+/*Responsive Buttons*/
+@media (max-width: 768px) {
+  .btn {
+    font-size:11px;
+    padding:4px 6px;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn {
+    font-size:12px;
+    padding:6px 12px;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn {
+    font-size:14px;
+    padding:8px 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn {
+    padding:10px 16px;
+    font-size:18px;
+  }
+}

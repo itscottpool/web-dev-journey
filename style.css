@@ -1,7 +1,60 @@
-body {
-    
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1vm;
+    border: 1px solid black;
+}
+
+#container { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    margin: 10px;
+    gap: 10px;
+    justify-items: center;
+    border: 1px solid red;
+}
+
+.item {
+    height: 100%;
+    border: 1px dotted green;
+    border-radius: 5px 20px 5px;
+    background-clip: padding-box;
+    align-self: end;
+}
+
+.text-area {
+    height: 30%;
+    margin-top: -5px;
+    /*border: 1px solid black;*/
+    border-radius: 5px 20px 5px;
     text-align: center;
+    overflow: hidden;
+}
+
+.item img {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px 20px 0 0;
+}
+
+.item-1 {
+    background: linear-gradient(to right, rgb(114, 117, 239), rgb(0, 13, 100));
+}
+
+.item-2 {
+    background: linear-gradient(to right, rgb(254, 248, 1), rgb(255, 100, 100));
+}
+
+.item-3 { 
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(69, 69, 69));
 }
